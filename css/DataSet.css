@@ -1,0 +1,35 @@
+@CHARSET "ISO-8859-1";
+
+/******* "fancy" table *******/
+
+.data-table {
+    margin: 0px;
+    padding: 0px;
+    font-family: "arial";
+    text-align: center;
+}
+
+.data-table tr td {
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 4px;
+    margin: 2px;
+    border: solid #000000 1px;
+}
+.data-table tr:hover td, .data-table tr:nth-child(2n+1):hover td {	background: #FFEE69;}
+
+.data-table tr:nth-child(2n+1) td {
+    background: #eeeeee;
+}
+
+/*.data-table tr:hover td{
+    visibility: visible;
+    width: auto;
+    display: table-cell;
+}
+
+.data-table tr td:first-child {
+    width: auto;
+    visibility: visible;
+    display: table-cell;
+}*/

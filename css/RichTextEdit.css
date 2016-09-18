@@ -1,0 +1,178 @@
+@CHARSET "ISO-8859-1";
+
+/****** richtext *****/
+
+.richtext-wraper {
+	width: 700px;
+	position: relative;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	padding: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+.richtext-button {
+	margin: 0px;
+	border: #eeeeee solid 1px;
+	background-color: #DDDDDD;
+	background-image: url('sprite.png');
+	background-position: 0px 0px;
+	height: 22px;
+	white-space: nowrap;
+	padding: 1px 8px;
+	color: #000000;
+	text-align: center;
+	text-indent: 0px;
+	position: relative;
+	line-height: 20px;
+}
+
+.richtext-button span {
+	width: 18px;
+	display: inline-block;
+	position: relative;
+	color: transparent;
+	background-image: url("editor-sprite.gif");
+}
+
+.richtext-button-super span {
+	background-position: 0px -144px;
+}
+
+.richtext-button-underline span {
+	background-position: 0px -72px;
+}
+
+.richtext-button-italic span {
+	background-position: 0px -36px;
+}
+
+
+.richtext-button-bold span {
+	background-position: 0px 0px;
+}
+
+
+.richtext-button-sub span {
+	background-position: 0px -180px;
+}
+
+.richtext-button-background span {
+	background-position: 0px -288px;
+}
+
+.richtext-button-foreground span {
+	background-position: 0px -216px;
+}
+
+.richtext-button-undo span {
+	background-position: 0px -1326px;
+}
+
+.richtext-button-redo span {
+	background-position: 0px -1355px;
+}
+
+.richtext-button-left span {
+	background-position: 0px -324px;
+}
+
+.richtext-button-center span {
+	background-position: 0px -360px;
+}
+
+.richtext-button-right span {
+	background-position: 0px -396px;
+}
+
+.richtext-button-indent span {
+	background-position: 0px -720px;
+}
+
+.richtext-button-outdent span {
+	background-position: 0px -684px;
+}
+
+.richtext-button-list span {
+	background-position: 0px -468px;
+}
+
+.richtext-button-ordlist span {
+	background-position: 0px -504px;
+}
+
+.richtext-button-image span {
+	background-position: 0px -756px;
+}
+
+.richtext-button-link span {
+	background-position: 0px -792px;
+}
+
+.richtext-button-plain span {
+	background: none;
+	display: none;
+}
+
+.richtext-dialog {
+	position: absolute;
+	display: block;
+	background-color: #fff0a5;
+	padding: 5px;
+	z-index: 200;
+}
+
+.richtext-toolbar {
+	padding: 2px;
+	background: #fff0a5;
+	width: 100%;
+	position: relative;
+	border-bottom: #C0C0C0 dashed 1px;
+}
+
+.richtext-toolbar-group {
+	padding: 0px;
+	margin: 4px;
+	display: inline-block;
+}
+
+.richtext-toolbar-group .richtext-button:first-child {
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.richtext-toolbar-group .richtext-button:last-child {
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.richtext-editor {
+	width: 100%;
+	margin: 0px;
+	position: relative;
+	min-height: 500px;
+	font-family: "Arial";
+	border: none;
+}
+
+.richtext-colorpicker {
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #FFFFFF;
+	z-index: 100;
+	padding: 5px;
+}
+
+.richtext-colorpicker a {
+	float: left;
+	width: 5px;
+	margin: 0px;
+	display: block;
+	padding: 1px;
+	height: 5px;
+}
+
+

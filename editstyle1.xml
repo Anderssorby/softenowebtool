@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<structure>
+		<style name="background-color" value="#6E74E2"/>
+		<style name="background-image" value="-o-linear-gradient(top, #6E74E2 40%, #8E94FF 70%, #FFFFFF 100%)"/>
+		<style name="background-image" value="-ms-linear-gradient(top, #6E74E2 40%, #8E94FF 70%, #FFFFFF 100%)"/>
+		<style name="background-image" value="-moz-linear-gradient(top, #6E74E2 40%, #8E94FF 70%, #FFFFFF 100%)"/>
+		<style name="background-image" value="-webkit-linear-gradient(top, #6E74E2 40%, #8E94FF 70%, #FFFFFF 100%)"/>
+		<style name="background-attachment" value="fixed"/>
+		<style name="background-size" value="cover"/>
+		<style name="background-repeat" value="no-repeat"/>
+		<style name="text-align" value="center"/>
+		<style name="background-color" value="#339ccc" selector="::selection"/>
+		<style name="border" value="none" selector="iframe"/>
+		<style name="color" value="#6E3FFF" selector="a, a:visited, a:active"/>
+		<style name="text-decoration" value="none" selector="a, a:visited, a:active"/>
+		<style name="text-decoration" value="underline" selector="a:hover"/>
+		<wrapper>
+			<style name="text-align" value="left"/>
+			<style name="margin" value="auto"/>
+			<style name="position" value="relative"/>
+			<style name="display" value="block"/>
+			<style name="font-family" value="'Arial', 'MS Trebuchet', sans-serif"/>
+			<style name="width" value="1000px"/>
+			<module name="head">
+				<style name="border-bottom-color" value="#ccc"/>
+				<style name="background-color" value="white"/>
+				<style name="border-bottom-width" value="1px"/>
+				<style name="border-bottom-style" value="dashed"/>
+				<style name="padding" value="5px"/>
+				<style name="padding-top" value="20px"/>
+				<style name="padding-bottom" value="5px"/>
+				<style name="text-align" value="center"/>
+				<style name="position" value="relative"/>
+				<style name="border" value="none" selector="img"/>
+			</module>
+			<wrapper>
+				<style name="text-align" value="left"/>
+				<style name="padding" value="10px"/>
+				<style name="width" value="auto"/>
+				<style name="background-color" value="white"/>
+				<style name="font-size" value="94%"/>
+				<module name="contenthead">
+					<style name="background-color" value="white"/>
+					<style name="margin" value="0px"/>
+					<style name="text-align" value="left"/>
+				</module>
+				<module name="content">
+					<style name="text-align" value="center" selector="h1"/>
+					<style name="margin-top" value="10px" selector="h1"/>
+					<style name="margin-bottom" value="10px" selector="h1"/>
+					<style name="margin" value="0px"/>
+					<style name="overflow" value="hidden"/>
+					<style name="caption-side" value="top"/>
+					<style name="vertical-align" value="top"/>
+					<style name="padding-right" value="5px"/>
+					<style name="overflow-x" value="auto"/>
+					<style name="font-size" value="14px"/>
+				</module>
+			</wrapper>
+		</wrapper>
+	</structure>
+	<styles>
+		<set name="menu">
+			<style name="margin" value="0px"/>
+			<style name="position" value="relative"/>
+			<style name="padding" value="0px"/>
+			<style name="z-index" value="30"/>
+			<sub element="li" selector="li">
+				<style name="margin" value="0"/>
+				<style name="padding" value="0"/>
+				<style name="list-style" value="none"/>
+				<style name="float" value="left"/>
+				<style name="font-size" value="18px"/>
+				<style name="z-index" value="30"/>
+			</sub>
+			<sub element="anchor" selector="a, li a">
+				<style name="display" value="block"/>
+				<style name="margin" value="0px"/>
+				<style name="padding" value="4px 4px"/>
+				<style name="width" value="188px"/>
+				<style name="background-color" value="#ffffff"/>
+				<style name="background-image" value="url('css/sprite.png')"/>
+				<style name="background-position" value="0px 0px"/>
+				<style name="color" value="#000000"/>
+				<style name="font-size" value="14px"/>
+				<style name="text-align" value="center"/>
+				<style name="text-decoration" value="none"/>
+				<style name="border" value="solid 1px #DBDBDB"/>
+			</sub>
+			<sub element="anchor-hover" selector="a:hover">
+				<style name="background" value="#EEEEEE"/>
+				<style name="text-decoration" value="none"/>
+			</sub>
+			<sub element="submenu" selector="div">
+				<style name="position" value="absolute"/>
+				<style name="display" value="none"/>
+				<style name="margin" value="0"/>
+				<style name="padding" value="0"/>
+				<style name="border" value="0"/>
+				<style name="z-index" value="30"/>
+			</sub>
+			<sub element="subli" selector="ul li">
+				<style name="position" value="relative"/>
+				<style name="display" value="block"/>
+				<style name="margin" value="0px"/>
+				<style name="width" value="inherit"/>
+				<style name="float" value="none"/>
+			</sub>
+			<sub element="sub-anchor" selector="div a">
+				<style name="position" value="relative"/>
+				<style name="display" value="block"/>
+				<style name="margin" value="0"/>
+				<style name="padding" value="4px 4px"/>
+				<style name="white-space" value="nowrap"/>
+				<style name="text-align" value="center"/>
+				<style name="text-decoration" value="none"/>
+				<style name="font-size" value="14px"/>
+				<style name="background-position" value="0px -2400px"/>
+			</sub>
+			<sub element="menu-wrapper">
+				<style name="display" value="inline-block"/>
+				<style name="float" value="none"/>
+				<style name="position" value="relative"/>
+			</sub>
+		</set>
+		<set name="contenttext">
+			<sub element="head" selector="h1">
+				<style name="color" value="#000"/>
+				<style name="text-align" value="left"/>
+			</sub>
+			<sub element="hr" selector="hr">
+				<style name="border" value="1px dashed #ccc"/>
+			</sub>
+			<sub element="ingress" selector="b">
+				<style name="color" value="#000"/>
+				<style name="font-weight" value="800"/>
+			</sub>
+			<sub element="body" selector="p">
+				<style name="color" value="#000"/>
+			</sub>
+			<sub element="image" selector="img">
+				<style name="width" value="100%"/>
+			</sub>
+		</set>
+	</styles>
+</root>

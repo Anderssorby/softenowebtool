@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.button-big {
+	padding: 10px;
+	font-size: 16px;
+}
+
+
+

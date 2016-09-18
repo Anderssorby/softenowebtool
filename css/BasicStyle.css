@@ -1,0 +1,125 @@
+@CHARSET "ISO-8859-1";
+
+.hovednyhet {
+	border-bottom: #CCCCCC solid 1px;
+	margin: 15px;
+}
+
+.subnyhet {
+	float: left;
+	width: 130px;
+	margin: 15px;
+	margin-top: 0px;
+}
+
+.subnyhet h2 {
+	margin: 0px;
+}
+
+/******** calendar ***********/
+
+.calendar {
+	font-family: "Trebuchet MS", "Tahoma", "Verdana", "Arial", sans-serif;
+	text-decoration: none;
+	padding: 2px;
+	width: 178px;
+	font-size: 14px;
+}
+
+.calendar a:hover, .calendar a:active, .calendar a:link, .calendar a:visited {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.calendar-month {
+	text-align: center;
+}
+
+.calendar .calendar-table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.calendar-head {
+	display: block;
+	text-align: center;
+	position: relative;
+}
+
+.calendar-prev {
+	position: absolute;
+	left: 2px;
+	color: #000000;
+}
+
+.calendar-next {
+	position: absolute;
+	right: 2px;
+	color: #000000;
+}
+
+.calendar-not-of-month, .calendar-not-of-month:link, .calendar-not-of-month:visited {
+	color: #EEEEEE;
+	border: transparent 1px solid;
+	background: none;
+}
+
+.calendar-today, .calendar-today:link, .calendar-today:visited {
+	color: #000000;
+	background-color: rgb(255, 240, 165);
+	border: rgb(255, 228, 92) 1px solid;
+}
+
+.calendar-of-month, .calendar-of-month:link, .calendar-of-month:visited {
+	color: #69b7d6;
+	background-color: rgb(238, 238, 238);
+	border: rgb(204, 204, 204) 1px solid;
+}
+
+.calendar-week-end {
+}
+
+.calendar-cell {
+	padding: 1px;
+	text-align: right;
+}
+
+.calendar-cell a {
+	display: block;
+	padding: 0px 2px;
+}
+
+.calendar-cell a:hover, .calendar-cell a:active {
+	background-color: rgb(253, 245, 206);
+	color: rgb(199, 116, 5);
+	border: rgb(251, 203, 9) solid 1px;
+}
+
+.calendar-day {
+	text-transform: capitalize;
+}
+
+.calendar-selected, .calendar-selected:hover {
+	border: rgb(251, 216, 80) solid 1px;
+	background-color: rgb(253, 245, 206);
+	color: rgb(189, 106, 5);
+}
+
+/******** END calendar *********/
+
+/******** calendar-large ***********/
+
+.calendar-large {
+	width: 616px;
+	
+}
+
+.calendar-large .calendar-cell a {
+	width: 80px;
+	height: 80px;
+}
+
+/******** END calendar-large *********/
+
+

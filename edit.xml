@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<load>
+		<style src="editstyle1.xml"/>
+		<link type="css" src="css/StyleSet.css"/>
+		<link type="css" src="css/DataSet.css"/>
+		<link type="css" src="css/Button.css"/>
+		<link type="css" src="css/ImageChooser.css"/>
+		<link type="css" src="css/Dev-editor.css"/>
+		<link type="css" src="css/RichTextEdit.css"/>
+		<link type="css" src="../jquery/css/ui-lightness/jquery-ui-1.8.16.custom.css"/>
+		<link type="script" src="../jquery/jquery-1.6.4.min.js"/>
+		<link type="script" src="../jquery/js/jquery-ui-1.8.16.custom.min.js"/>
+		<link type="script" src="javascript/menu.js"/>
+		<link type="script" src="javascript/Action.js"/>
+		<link type="script" src="javascript/Calendar.js"/>
+		<link type="script" src="javascript/ImageSelect.js"/>
+		<link type="script" src="javascript/RichTextEdit.js"/>
+		<title value="Softeno Web Tools" icon="bilder/thumb.png"/>
+		<exeption type="noaccess" handler="noaccess"/>
+		<exeption type="login" handler="login"/>
+		<option name="restricted" value="true"/>
+	</load>
+	<head>
+		<logo src="bilder/logo.png"/>
+		<app name="logbox"/>
+		<app name="siteindicator"/>
+		<menu src="toolmenu.xml" class="Menu">
+			<menuobject link="?site=main" name="Hjem">
+				<menuobject link="?action=loggut" name="Logg ut"/>
+				<menuobject link="brukerveiledning.pdf" name="Hjelp"/>
+			</menuobject>
+			<menuobject link="?site=nyheter" name="Nyheter">
+				<menuobject link="?site=articles" name="Artikler"/>
+				<menuobject link="?site=infosites" name="Infosider"/>
+			</menuobject>
+			<menuobject link="?site=main" name="Innhold">
+				<menuobject link="?site=bilder" name="Bilder"/>
+				<menuobject link="?site=filer" name="Filer"/>
+				<menuobject link="?site=calendar" name="Kalender"/>
+				<menuobject link="?site=dev" name="Developer's cradle"/>
+				<menuobject link="?site=trainingnew" name="Treningsplanlegger"/>
+			</menuobject>
+			<menuobject link="?site=structure" name="Struktur">
+				<menuobject link="?site=style" name="Sidestil"/>
+			</menuobject>
+			<menuobject link="?site=config" name="Administrer">
+				<menuobject link="?site=users" name="Brukere"/>
+				<menuobject link="?site=mail" name="Epost"/>
+				<menuobject link="?site=tabell" name="Tabeller"/>
+			</menuobject>
+		</menu>
+	</head>
+	<contenthead></contenthead>
+	<content>
+		<switch on="site">
+			<case value="nyheter">
+				<app name="articles"/>
+			</case>
+			<case value="artikkel">
+				<app name="article"/>
+			</case>
+			<case value="info">
+				<app name="info"/>
+			</case>
+			<case default="true" value="main">
+				<app name="main"/>
+			</case>
+			<case value="nyartikkel">
+				<app name="editarticle"/>
+			</case>
+			<case value="users">
+				<app name="users"/>
+			</case>
+			<case value="logoedit">
+				<app name="logoedit"/>
+			</case>
+			<case value="adedit">
+				<app name="adedit"/>
+			</case>
+			<case value="editmodule">
+				<app name="editmodule"/>
+			</case>
+			<case value="blueboxedit">
+				<app name="blueboxedit"/>
+			</case>
+			<case value="bilder">
+				<app name="images"/>
+			</case>
+			<case value="articles">
+				<app name="articlemanager"/>
+			</case>
+			<case value="filer">
+				<app name="files"/>
+			</case>
+			<case value="infosites">
+				<app name="infosites"/>
+			</case>
+			<case value="editinfosite">
+				<app name="editinfosite"/>
+			</case>
+			<case value="menu">
+				<app name="editmenu"/>
+			</case>
+			<case value="menu-edit">
+				<app name="menu-edit"/>
+			</case>
+			<case value="tabell">
+				<app name="tabell"/>
+			</case>
+			<case value="side">
+				<app name="side"/>
+			</case>
+			<case value="slideredit">
+				<app name="slideredit"/>
+			</case>
+			<case value="rightedit">
+				<app name="rightedit"/>
+			</case>
+			<case value="structure">
+				<app name="structure"/>
+			</case>
+			<case value="calendar">
+				<app name="calendar"/>
+			</case>
+			<case value="event">
+				<app name="event"/>
+			</case>
+			<case value="config">
+				<app name="config"/>
+			</case>
+			<case value="mail">
+				<app name="mail"/>
+			</case>
+			<case value="style">
+				<app name="style"/>
+			</case>
+			<case value="player">
+				<app name="player"/>
+			</case>
+			<case value="trainingnew">
+				<app name="trainingapp"/>
+			</case>
+			<case value="dev">
+				<app name="developer"/>
+			</case>
+		</switch>
+	</content>
+</root>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<actions on="action"></actions>
+	<moduleapps>
+		<object app="trainingapp-newentry" class="TrainingPlugin">
+			
+		</object>
+		<object app="trainingapp-overview" class="TrainingPlugin">
+			
+		</object>
+		<object app="trainingapp" class="TrainingPlugin">
+			
+		</object>
+	</moduleapps>
+</root>

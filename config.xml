@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<import>
+		<extension name="flowplayer" config="init.xml"/>
+		<extension name="trainingapp" config="init.xml"/>
+		<extension name="developerscradle" config="init.xml"/> 
+	</import>
+	<mysql>
+		<connect host="" username="" password="" database=""/>
+	</mysql>
+	<actions on="action">
+		<action name="loggut" access="restricted" class="EditSite"/>
+		<action name="login" class="EditSite"/>
+		<action name="readtable" access="restricted" category="admin" class="EditSite"/>
+		<action name="mail-get-message" access="restricted" class="EditSite"/>
+		<action name="structure" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="logoalter" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="adalter" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="modapp" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="bluelink" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="dellink" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="altertitle" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="sliderimage" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="sliderimagedel" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="appmodule" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="delapp" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="fetch-img" access="restricted" category="content" class="ImageHandler"/>
+		<action name="lastbilde" access="restricted" category="content" class="ImageHandler"/>
+		<action name="slettbilde" access="restricted" category="content" class="ImageHandler"/>
+		<action name="menu-edit" access="restricted" category="structure" class="MenuEditor"/>
+		<action name="menu-child" access="restricted" category="structure" class="MenuEditor"/>
+		<action name="menu-del" access="restricted" category="structure" class="MenuEditor"/>
+		<action name="menu-reorder" access="restricted" category="structure" class="MenuEditor"/>
+		<action name="infosites" access="restricted" category="structure" class="MenuEditor"/>
+		<action name="modreorder" access="restricted" category="structure" class="StructureEdit"/>
+		<action name="create-event" access="restricted" category="content" class="Calendar"/>
+		<action name="update-event" access="restricted" category="content" class="Calendar"/>
+		<action name="read-event" access="restricted" category="content" class="Calendar"/>
+		<action name="del-event" access="restricted" category="content" class="Calendar"/>
+		<action name="lagreinfo" access="restricted" category="content" class="ContentHandler"/>
+		<action name="apneinfo" access="restricted" category="content" class="ContentHandler"/>
+		<action name="slettinfo" access="restricted" category="content" class="ContentHandler"/>
+		<action name="slettart" access="restricted" category="content" class="ContentHandler"/>
+		<action name="apneart" access="restricted" category="content" class="ContentHandler"/>
+		<action name="lagreart" access="restricted" category="content" class="ContentHandler"/>
+		<action name="slettfil" access="restricted" category="content" class="FileHandler"/>
+		<action name="lastfil" access="restricted" category="content" class="FileHandler"/>
+		<action name="file-rename" access="restricted" category="content" class="FileHandler"/>
+		<action name="newuser" access="restricted" category="admin" class="UserHandler"/>
+		<action name="deluser" access="restricted" category="admin" class="UserHandler"/>
+		<action name="user-update-pass" access="restricted" category="admin" class="UserHandler"/>
+		<action name="setconnection" access="restricted" category="admin" class="UserHandler"/>
+		<action name="user-setcategory" access="restricted" category="admin" class="UserHandler"/>
+	</actions>
+	<moduleapps>
+		<object app="logo" class="SimpleSite" edit="logoedit">
+			<arg value="logo"/>
+			<prop name="src" type="required"/>
+		</object>
+		<object app="menu" class="SimpleSite" edit="menu">
+			<arg value="menu"/>
+			<prop name="src" type="required"/>
+		</object>
+		<object app="contenthead" class="SimpleSite">
+			<arg value="contenthead"/>
+		</object>
+		<object app="article" class="SimpleSite">
+			<arg value="article"/>
+		</object>
+		<object app="articles" class="SimpleSite">
+			<arg value="articles"/>
+		</object>
+		<object app="info" class="SimpleSite">
+			<arg value="info"/>
+		</object>
+		<object app="logbox" class="EditSite">
+			<arg value="logbox"/>
+		</object>
+		<object app="siteindicator" class="EditSite">
+			<arg value="siteindicator"/>
+		</object>
+		<object app="main" class="EditSite">
+			<arg value="main"/>
+		</object>
+		<object app="editarticle" category="content" class="ContentHandler">
+			<arg value="editarticle"/>
+		</object>
+		<object app="users" category="admin" class="UserHandler">
+			<arg value="users"/>
+		</object>
+		<object app="images" category="content" class="ImageHandler">
+			<arg value="images"/>
+		</object>
+		<object app="articlemanager" category="content" class="ContentHandler">
+			<arg value="articlemanager"/>
+		</object>
+		<object app="files" category="content" class="FileHandler">
+			<arg value="files"/>
+		</object>
+		<object app="infosites" category="content" class="ContentHandler">
+			<arg value="infosites"/>
+		</object>
+		<object app="editinfosite" category="content" class="ContentHandler">
+			<arg value="editinfosite"/>
+		</object>
+		<object app="editmenu" category="structure" class="MenuEditor">
+			<arg value="editmenu"/>
+		</object>
+		<object app="menu-edit" category="structure" class="MenuEditor">
+			<arg value="menu-edit"/>
+		</object>
+		<object app="tabell" category="admin" class="EditSite">
+			<arg value="tabell"/>
+		</object>
+		<object app="structure" category="structure" class="StructureEdit">
+			<arg value="structure"/>
+		</object>
+		<object app="logoedit" category="structure" class="StructureEdit">
+			<arg value="logoedit"/>
+		</object>
+		<object app="adedit" category="structure" class="StructureEdit">
+			<arg value="adedit"/>
+		</object>
+		<object app="blueboxedit" category="structure" class="StructureEdit">
+			<arg value="blueboxedit"/>
+		</object>
+		<object app="editmodule" category="structure" class="StructureEdit">
+			<arg value="editmodule"/>
+		</object>
+		<object app="slideredit" category="structure" class="StructureEdit">
+			<arg value="slideredit"/>
+		</object>
+		<object app="calendar" category="content" class="Calendar">
+			<arg value="calendar"/>
+		</object>
+		<object app="smalcalendar" class="Calendar">
+			<arg value="smalcalendar"/>
+		</object>
+		<object app="event" class="Calendar">
+			<arg value="event"/>
+		</object>
+		<object app="config" category="admin" class="UserHandler">
+			<arg value="config"/>
+		</object>
+		<object app="mail" class="EditSite">
+			<arg value="mail"/>
+		</object>
+		<object app="style" class="StyleHandler">
+			<arg value="style"/>
+		</object>
+		<object app="noaccess" class="EditSite">
+			<arg value="noaccess"/>
+		</object>
+		<object app="login" class="EditSite">
+			<arg value="login"/>
+		</object>
+	</moduleapps>
+	<site>
+		<case on="site" value="bilde" class="SimpleSite"/>
+		<case on="site" value="file" class="SimpleSite"/>
+		<desc src="edit.xml"/>
+	</site>
+</root>

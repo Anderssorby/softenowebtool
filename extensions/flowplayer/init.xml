@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<actions on="action"></actions>
+	<moduleapps>
+		<object app="player" class="FlowplayerPlugin" edit="">
+			<arg value="player"/>
+		</object>
+	</moduleapps>
+</root>

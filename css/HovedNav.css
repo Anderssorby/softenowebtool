@@ -1,0 +1,109 @@
+@CHARSET "ISO-8859-1";
+
+.sow-nav-hol {
+	display: block;
+	position: relative;
+	height: 308px;
+}
+
+.sow-nav-box {
+	font-size: 18px;
+	border: 4px solid;
+	border-radius: 1px;
+	display: block;
+	background-image: -o-linear-gradient(top, #eeeeee 0%, #ffffff 50%, #eeeeee 70%);
+	background-image: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 50%, #eeeeee 70%);
+	background-image: -ms-linear-gradient(top, #eeeeee 0%, #ffffff 50%, #eeeeee 70%);
+	background-image: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 50%, #eeeeee 70%);
+	margin: 1px;
+	width: 32%;
+	min-height: 298px;
+	position: relative;
+	float: left;
+}
+
+.sow-nav-box ul {
+	list-style: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+.sow-nav-box li {
+	margin: 14px;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	height: 50px;
+	width: 50px;
+}
+
+.sow-nav-box h3 {
+	font-size: 28px;
+	text-align: center;
+	margin: 0px;
+}
+
+.sow-nav-box a {
+	padding: 0px;
+	border-radius: 5px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	background-size: cover;
+	text-decoration: none;
+	color: transparent;
+}
+
+.sow-nav-innhold {
+	border-color: #15dd00;
+}
+
+.sow-nav-oppslag {
+	border-color: #ff1500;
+}
+
+.sow-nav-admin {
+	border-color: #1500ff;
+}
+
+.sow-nav-article {
+	background-image: url('newarticle.png');
+}
+
+.sow-nav-articles {
+	background-image: url('articles.png');
+}
+
+.sow-nav-calendar {
+	background-image: url('calendar.png');
+}
+
+.sow-nav-newinfo {
+	background-image: url('newinfo.png');
+}
+
+.sow-nav-infosites {
+	background-image: url('articles.png');
+}
+
+.sow-nav-files {
+	background-image: url('files.png');
+}
+
+.sow-nav-images {
+	background-image: url('images.png');
+}
+
+.sow-nav-config {
+	background-image: url('config.png');
+}
+
+.sow-nav-users {
+	background-image: url('users.png');
+}
+
+.sow-nav-structure {
+	background-image: url('structure.png');
+}

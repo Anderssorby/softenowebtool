@@ -1,0 +1,541 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: #6E74E2;
+	background-image: -o-linear-gradient(top, #6E74E2 40%, #8E94FF 70%, #FFFFFF 100%);
+	background-image: -ms-linear-gradient(top, #6E74E2 40%, #8E94FF 70%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(top, #6E74E2 40%, #8E94FF 70%, #FFFFFF 100%);
+	background-image: -webkit-linear-gradient(top, #6E74E2 40%, #8E94FF 70%, #FFFFFF 100%);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.center {
+	text-align: left;
+	margin: auto;
+	position: relative;
+	display: block;
+}
+
+.logginbox {
+	font-family: "Trebuchet MS", "Tahoma", "Verdana", "Arial", sans-serif;
+	color: #777;
+	padding: 20px;
+	border-width: 1px;
+	border-color: #aaa;
+	border-style: dashed;
+	background-color: #FFFFFF;
+	width: 280px;
+	display: block;
+	position: relative;
+	top: 150px;
+	margin: auto;
+}
+
+.logginbox div {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.logginbox label {
+	width: 100px;
+	display: inline-block;
+}
+
+.logginbox h1 {
+	margin: 2px;
+	cursor: move;
+}
+
+.logginbox input {
+	border-color: rgb(204, 204, 204);
+	border-style: solid;
+	border-width: 1px;
+	color: rgb(51, 51, 51);
+	width: auto;
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	padding: 3px;
+}
+
+.logginbox form {
+	padding: 5px;
+	background-color: #dedede;
+}
+
+.logbox {
+	border: solid 1px #cccccc;
+	text-align: left;
+	height: 100px;
+	background-color: #eeeeee;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+
+.logbox h3 {
+	margin: 0px;
+	padding: 2px 20px;
+}
+
+.logbox ul {
+	margin: 0px;
+	padding-left: 0px;
+	list-style: none;
+	overflow: auto;
+	position: relative;
+	width: 100%;
+}
+
+.logbox li {
+	background-image: url('sprite.png');
+	background-position: 0px 0px;
+	border: #CCCCCC solid 1px;
+	font-size: 18px;
+	padding: 2px 10px;
+	text-align: center;
+}
+
+.sow-styleform {
+	display: block;
+	padding: 8px;
+}
+
+.sow-styleform label {
+	display: inline-block;
+	min-width: 150px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.sow-styleform input[type='text'], .sow-styleform input[type='password'] {
+	border-radius: 3px;
+	border: solid #cccccc 1px;
+	width: 200px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.sow-warning {
+	color: red;
+	border: 2px #FF3C3C solid;
+	padding: 5px;
+	background-color: #FFDEDE;
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.sow-progress {
+	display: none;
+	position: fixed;
+	background-image: url('loader.gif');
+	background-size: cover;
+	height: 40px;
+	width: 480px;
+	border: 1px solid #ccc;
+	left: 34%;
+	top: 40%;
+}
+
+.sow-result {
+	position: fixed;
+	display: none;
+	margin: auto;
+	z-index: 500;
+	top: 100px;
+	left: 400px;
+	padding: 10px;
+	background-color: #F9EDBE;
+	border-color: #F0C36D;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.sow-button {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #575757;
+	border-radius: 4px;
+	padding: 2px;
+	width: auto;
+	color: #000000;
+	background: #d7d7d7;
+	text-align: center;
+	background-image: -o-linear-gradient(top, rgb(249, 249, 249) 40%, rgb(227, 227, 227) 70%);
+	background-image: -webkit-linear-gradient(top, rgb(249, 249, 249) 40%, rgb(227, 227, 227) 70%);
+	background-image: -ms-linear-gradient(top, rgb(249, 249, 249) 40%, rgb(227, 227, 227) 70%);
+	background-image: -moz-linear-gradient(top, rgb(249, 249, 249) 40%, rgb(227, 227, 227) 70%);
+	display: inline-block;
+}
+
+.sow-button:hover {
+	cursor: pointer;
+}
+
+.sow-button:active {
+	color: #111111;
+	background-color: #cccccc;
+	background-image: -o-linear-gradient(top, rgb(227, 227, 227) 40%, rgb(249, 249, 249) 70%);
+	background-image: -webkit-linear-gradient(top, rgb(227, 227, 227) 40%, rgb(249, 249, 249) 70%);
+	background-image: -ms-linear-gradient(top, rgb(227, 227, 227) 40%, rgb(249, 249, 249) 70%);
+	background-image: -moz-linear-gradient(top, rgb(227, 227, 227) 40%, rgb(249, 249, 249) 70%);
+}
+
+/******* sow-filelist *******/
+
+.sow-filelist-wrapper {
+	position: relative;
+	display: block;
+}
+
+.sow-filelist-list {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	display: block;
+	height: 480px;
+}
+
+.sow-filelist-file {
+	float: left;
+	display: block;
+	width: 162px;
+	height: 120px;
+	position: relative;
+	overflow: hidden;
+}
+
+.sow-filelist-header {
+	height: 25px;
+	display: block;
+	border-bottom: dashed 1px #cccccc;
+	position: relative;
+	overflow: auto;
+}
+
+.sow-filelist-upload {
+	display: block;
+	position: relative;
+}
+
+.sow-filelist-button, .sow-filelist-button:hover, .sow-filelist-button:link, .sow-filelist-button:visited {
+	height: 25px;
+	border: none;
+	text-decoration: none;
+	color: #000000;
+	background-color: #f1f1f1;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 2px 8px;
+	text-align: center;
+	text-indent: 0px;
+	white-space: nowrap;
+	font-family: use-lang-def;
+	vertical-align: middle;
+	border-radius: 4px;
+}
+
+.sow-filelist-footer {
+	text-align: center;
+	height: 25px;
+}
+
+.sow-filelist-select {
+	height: 20px;
+	border: none;
+}
+
+.sow-filelist-action {
+	display: none;
+}
+
+.sow-filelist-icon {
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: cover;
+	background-position: 0px 0px;
+	background-image: url('file_edit.png');
+}
+
+.sow-filelist-icon-pdf {
+	background-image: url('file_pdf.png');
+}
+
+.sow-filelist-icon-powerpoint {
+	background-image: url('file_powerpoint.png');
+}
+
+.sow-filelist-icon-excel {
+	background-image: url('file_excel.png');
+}
+
+.sow-filelist-icon-text {
+	background-image: url('file_text.png');
+}
+
+.sow-filelist-icon-word {
+	background-image: url('word.png');
+}
+
+.sow-filelist-name {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.sow-filelist-wrapper .ui-selected, .sow-filelist-wrapper .ui-selecting {
+	background-color: #9e9ee4;
+}
+
+/******* END sow-filelist *******/
+
+/******* table-display *******/
+
+.table-display {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	empty-cells: show;
+}
+
+.table-display tr {
+	background-image: url('sprite.png');
+	background-position: 0px 0px;
+	border: #CCCCCC solid 1px;
+	font-size: 18px;
+}
+
+.table-display td {
+	padding: 2px 10px;
+}
+
+.table-display td a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+.table-display td a:hover {
+	text-decoration: none;
+	color: #777777;
+}
+
+.table-display input[type='text'] {
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+	font-size: 18px;
+	width: 100px;
+	
+}
+
+/******** END table-display ********/
+
+/******** calendar ***********/
+
+.calendar {
+	font-family: "Trebuchet MS", "Tahoma", "Verdana", "Arial", sans-serif;
+	text-decoration: none;
+	padding: 2px;
+	width: 178px;
+	font-size: 14px;
+}
+
+.calendar a:hover, .calendar a:active, .calendar a:link, .calendar a:visited {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.calendar-month {
+	text-align: center;
+}
+
+.calendar .calendar-table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.calendar-head {
+	display: block;
+	text-align: center;
+	position: relative;
+}
+
+.calendar-prev {
+	position: absolute;
+	left: 2px;
+	color: #000000;
+}
+
+.calendar-next {
+	position: absolute;
+	right: 2px;
+	color: #000000;
+}
+
+.calendar-not-of-month, .calendar-not-of-month:link, .calendar-not-of-month:visited {
+	color: #EEEEEE;
+	border: transparent 1px solid;
+	background: none;
+}
+
+.calendar-today, .calendar-today:link, .calendar-today:visited {
+	color: #000000;
+	background-color: rgb(255, 240, 165);
+	border: rgb(255, 228, 92) 1px solid;
+}
+
+.calendar-of-month, .calendar-of-month:link, .calendar-of-month:visited {
+	color: #69b7d6;
+	background-color: rgb(238, 238, 238);
+	border: rgb(204, 204, 204) 1px solid;
+}
+
+.calendar-week-end {
+}
+
+.calendar-cell {
+	padding: 1px;
+	text-align: right;
+}
+
+.calendar-cell a {
+	display: block;
+	padding: 0px 2px;
+}
+
+.calendar-cell a:hover, .calendar-cell a:active {
+	background-color: rgb(253, 245, 206);
+	color: rgb(199, 116, 5);
+	border: rgb(251, 203, 9) solid 1px;
+}
+
+.calendar-day {
+	text-transform: capitalize;
+}
+
+.calendar-selected, .calendar-selected:hover {
+	border: rgb(251, 216, 80) solid 1px;
+	background-color: rgb(253, 245, 206);
+	color: rgb(189, 106, 5);
+}
+
+/******** END calendar *********/
+
+/******** calendar-large ***********/
+
+.calendar-large {
+	width: 616px;
+}
+
+.calendar-large .calendar-cell a {
+	width: 80px;
+	height: 80px;
+}
+
+.calendar-event {
+	color: #000000;
+	text-align: left;
+	border: 1px solid #FF3C3C;
+	font-size: 10px;
+	background: #FF9C9C;
+}
+
+.calendar-event-holder {
+	overflow: auto;
+	height: 75%;
+}
+
+/******** END calendar-large *********/
+
+/******** sow-styleedit ***********/
+
+.sow-styleedit-list {
+	padding-left: 10px;
+	list-style: none;
+}
+
+.sow-styleedit-list-type {
+	text-transform: uppercase;
+	font-weight: 900;
+	
+}
+
+.sow-styleedit-list-name {
+
+}
+
+.sow-styleedit-list-value {
+	color: #ccc;
+}
+
+/******** END calendar-large *********/
+
+.qmail {
+	width: 600px;
+	position: relative;
+	display: block;
+}
+
+.qmail-list {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.qmail-maillist li {
+	padding: 4px;
+	background: #66aaff;
+	border: solid 1px #000000;
+}
+
+.qmail-right {
+	width: 70%;
+	float: right;
+	overflow: hidden;
+	display: block;
+}
+
+.qmail-left {
+	width: 30%;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+
+.title-input {
+	border: solid 1px #C0C0C0;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+input.style {
+	border-color: rgb(204, 204, 204);
+	border-style: solid;
+	border-width: 1px;
+	color: rgb(51, 51, 51);
+	margin-right: 11px;
+	vertical-align: top;
+	width: auto;
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	padding: 3px;
+	display: block;
+}
+
+.align-form {
+	padding-left: 20px;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<load>
+		<style src="style1.xml"/>
+		<link type="css" src="css/BasicStyle.css"/>
+		<link type="css" src="css/Menu.css"/>
+		<link type="script" src="jquery/jquery-1.6.4.min.js"/>
+		<link type="script" src="jquery/js/jquery-ui-1.8.16.custom.min.js"/>
+		<link type="script" src="javascript/BasicScript.js"/>
+		<title value="DSK - Drammen svømmeklubb"/>
+	</load>
+	<head>
+		<logo src="?site=bilde&amp;id=1164872631"/>
+		<menu src="menu.xml" class="Menu">
+			<menuobject name="Hjem" link="?site=hjem">
+				<menuobject name="Web tool" link="softenowebtool"/>
+			</menuobject>
+			<menuobject link="?site=nyheter" name="Nyheter"/>
+			<menuobject name="Stevner og aktiviteter" link="">
+				<menuobject link="" name="Egne stevner"/>
+				<menuobject link="" name="Terminliste"/>
+				<menuobject link="" name="Aktiviteter"/>
+			</menuobject>
+			<menuobject link="" name="Treningstider"/>
+			<menuobject name="Svømmekurs" link="?site=info&amp;id=3"/>
+			<menuobject link="" name="Foreldreinformasjon"/>
+			<menuobject link="?site=info&amp;id=2" name="Om klubben"/>
+			<menuobject link="" name="Kontakt oss"/>
+		</menu>
+	</head>
+	<left>
+		<newsblock num="4"/>
+		<bluebox title="Lenker">
+			<link href="http://medley.no" value="Medley"/>
+			<link href="http://svomming.no" value="Svømmeforbundet"/>
+			<link href="http://swimshop.no" value="Swimshop"/>
+			<link href="http://livetiming.medley.no/" value="Livetiming"/>
+		</bluebox>
+		<app name="smalcalendar"/>
+	</left>
+	<contenthead>
+		<app name="contenthead"/>
+	</contenthead>
+	<content>
+		<switch on="site">
+			<case default="true" value="hjem">
+				<app name="titleslider">
+					<image src="?site=bilde&amp;id=1164872632"/>
+					<image src="?site=bilde&amp;id=1164872635"/>
+					<image src="?site=bilde&amp;id=1164872634"/>
+					<image src="?site=bilde&amp;id=1164872633"/>
+				</app>
+				<app name="main"/>
+			</case>
+			<case value="nyheter">
+				<app name="articles"/>
+			</case>
+			<case value="artikkel">
+				<app name="article"/>
+			</case>
+			<case value="info">
+				<app name="info"/>
+			</case>
+			<case value="event">
+				<app name="event"/>
+			</case>
+		</switch>
+	</content>
+	<right>
+		<ad link="http://softeno.com/dsk/DSKhjem/softenowebtool/arkiv/Diverse/20100410MarienlystOpenI.pdf" title="nm 2012" src="?site=bilde&amp;id=1164872604"/>
+		<ad link="http://drammensvmmeklubb.zenfolio.com/" title="Zenfolio" src="?site=bilde&amp;id=1164872600"/>
+		<ad title="Grasrotandelen" link="http://softeno.com/dsk/DSKhjem/softenowebtool/arkiv/Diverse/Grasrotandelen_vervebrev.pdf" src="bilder/grasrotandelen160.jpg"/>
+		<ad title="svommeaksjonen" link="?" src="bilder/svommeaksjonen2011.jpg"/>
+	</right>
+	<footer>
+		<app name="footer"/>
+	</footer>
+</root>

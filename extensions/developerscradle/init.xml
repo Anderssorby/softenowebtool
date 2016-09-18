@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>	
+	<actions on="action">
+		<action name="devcommit" access="restricted" class="Developer"/>
+		<action name="devrev-remove" access="restricted" class="Developer"/>
+		<action name="devscandir" access="restricted" class="Developer"/>
+	</actions>
+	<moduleapps>
+		<object app="developer" category="admin" class="Developer" edit="">					</object>
+	</moduleapps>
+</root>

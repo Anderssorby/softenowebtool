@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<structure>
+		<style name="background-color" value="#89b8ff"/>
+		<style name="background-image" value="url('css/blue_back_drops.jpg')"/>
+		<style name="background-clip" value="border-box"/>
+		<style name="background-attachment" value="fixed"/>
+		<style name="background-size" value="contain"/>
+		<style name="background-repeat" value="repeat-x"/>
+		<style name="font-family" value="Arial, 'MS Trebuchet', sans-serif"/>
+		<style name="font-size" value="90%"/>
+		<style name="border" value="none" selector="img"/>
+		<style name="text-decoration" value="none" selector="a, a:link, a:visited"/>
+		<style name="color" value="#6E3FFF" selector="a, a:link, a:visited"/>
+		<style name="text-decoration" value="underline" selector="a:hover, a:active"/>
+		<style name="border" value="1px dashed #ccc" selector="hr"/>
+		<wrapper>
+			<style name="text-align" value="left"/>
+			<style name="margin" value="auto"/>
+			<style name="position" value="relative"/>
+			<style name="margin-top" value="2px"/>
+			<style name="width" value="1000px"/>
+			<module name="head">
+				<style name="text-align" value="center"/>
+				<style name="padding-top" value="10px"/>
+				<style name="border-radius" value="4px"/>
+				<style name="background" value="#fff" selector="a"/>
+				<style name="display" value="inline-block" selector="a"/>
+			</module>
+			<wrapper>
+				<style name="text-align" value="left"/>
+				<style name="padding" value="0px"/>
+				<style name="background-color" value="white"/>
+				<style name="box-shadow" value="8px 10px 10px rgba(0, 0, 0, 0.5), inset 8px 10px 10px rgba(255, 255, 255, 0.75)"/>
+				<module name="contenthead">
+					<style name="background-color" value="white"/>
+					<style name="margin" value="0px"/>
+					<style name="text-align" value="left"/>
+					<style name="padding" value="2px"/>
+				</module>
+				<wrapper>
+					<style name="width" value="100%"/>
+					<style name="display" value="inline-block"/>
+					<module name="left">
+						<style name="width" value="auto"/>
+						<style name="float" value="left"/>
+						<style name="vertical-align" value="top"/>
+						<style name="display" value="inline-block"/>
+					</module>
+					<module name="content">
+						<style name="margin" value="5px"/>
+						<style name="overflow" value="hidden"/>
+						<style name="caption-side" value="top"/>
+						<style name="vertical-align" value="top"/>
+						<style name="padding-left" value="5px"/>
+						<style name="display" value="inline-block"/>
+						<style name="float" value="left"/>
+						<style name="width" value="617px"/>
+					</module>
+					<module name="right">
+						<style name="width" value="auto"/>
+						<style name="float" value="right"/>
+						<style name="vertical-align" value="top"/>
+						<style name="display" value="inline-block"/>
+					</module>
+				</wrapper>
+				<module name="footer">
+					<style name="padding" value="20px"/>
+					<style name="color" value="#CCCCCC"/>
+					<style name="border-width" value="0px"/>
+					<style name="border-top-width" value="1px"/>
+					<style name="border-top-color" value="#CCCCCC"/>
+					<style name="border-style" value="dashed"/>
+				</module>
+			</wrapper>
+		</wrapper>
+	</structure>
+	<styles>
+		<set name="menu">
+			<style name="margin" value="auto"/>
+			<style name="position" value="relative"/>
+			<style name="display" value="inline-block"/>
+			<style name="margin-top" value="1px"/>
+			<style name="padding" value="0"/>
+			<style name="z-index" value="30"/>
+			<sub element="li" selector="li">
+				<style name="margin" value="0"/>
+				<style name="padding" value="0"/>
+				<style name="list-style" value="none"/>
+				<style name="float" value="left"/>
+				<style name="z-index" value="30"/>
+			</sub>
+			<sub element="anchor" selector="a">
+				<style name="display" value="block"/>
+				<style name="margin" value="0px"/>
+				<style name="padding" value="7px 5px"/>
+				<style name="max-width" value="150px"/>
+				<style name="background" value="transparent"/>
+				<style name="color" value="#000000"/>
+				<style name="font-size" value="14px"/>
+				<style name="font-weight" value="200"/>
+				<style name="text-align" value="center"/>
+				<style name="text-decoration" value="none"/>
+				<style name="height" value="18px"/>
+			</sub>
+			<sub element="anchor-hover" selector="a:hover">
+				<style name="background-size" value="cover"/>
+				<style name="background-image" value="url('css/menu_active.jpg')"/>
+			</sub>
+			<sub element="submenu" selector="div">
+				<style name="position" value="absolute"/>
+				<style name="visibility" value="hidden"/>
+				<style name="margin" value="0"/>
+				<style name="padding" value="0"/>
+				<style name="background" value="#FFFFFF"/>
+				<style name="border" value="0"/>
+				<style name="float" value="none"/>
+			</sub>
+			<sub element="subli" selector="ul li">
+				<style name="position" value="relative"/>
+				<style name="display" value="block"/>
+				<style name="margin" value="0px"/>
+				<style name="width" value="inherit"/>
+				<style name="float" value="none"/>
+			</sub>
+			<sub element="sub-anchor" selector="div a">
+				<style name="background" value="#eeeeee"/>
+				<style name="border" value="solid 1px #dedede"/>
+			</sub>
+			<sub element="menu-wrapper">
+				<style name="background-image" value="url('css/menu_bar.png')"/>
+				<style name="background-attachment" value="scroll"/>
+				<style name="background-clip" value="border-box"/>
+				<style name="background-color" value="transparent"/>
+				<style name="background-origin" value="padding-box"/>
+				<style name="background-position" value="50% 0%"/>
+				<style name="background-repeat" value="no-repeat"/>
+				<style name="background-size" value="cover"/>
+				<style name="clear" value="both"/>
+				<style name="height" value="90px"/>
+				<style name="text-align" value="center"/>
+			</sub>
+		</set>
+		<set name="bluebox">
+			<style name="border" value="#CCCCCC solid 1px"/>
+			<style name="width" value="174px"/>
+			<style name="margin" value="2px"/>
+			<style name="margin-bottom" value="5px"/>
+			<style name="font-size" value="95%"/>
+			<style name="background-image" value="url('css/side_menu.png')"/>
+			<style name="background-size" value="contain"/>
+			<style name="padding" value="2px"/>
+			<sub element="head" selector="h1, div">
+				<style name="color" value="#000000"/>
+				<style name="padding" value="4px"/>
+				<style name="margin" value="0px"/>
+				<style name="font-weight" value="700"/>
+				<style name="font-size" value="92%"/>
+			</sub>
+			<sub element="content" selector="p, ul">
+				<style name="margin" value="4px"/>
+				<style name="padding-left" value="3px"/>
+				<style name="list-style" value="none"/>
+			</sub>
+		</set>
+		<set name="newsdisplay">
+			<style name="display" value="inline-block"/>
+			<sub element="hovednyhet">
+				<style name="margin" value="15px"/>
+			</sub>
+			<sub element="artlink" selector="a, a:hover">
+				<style name="color" value="#000"/>
+			</sub>
+			<sub element="subhead" selector="h2, h1">
+				<style name="margin" value="0px"/>
+				<style name="text-align" value="center"/>
+			</sub>
+			<sub element="subnyhet">
+				<style name="float" value="left"/>
+				<style name="width" value="160px"/>
+				<style name="margin" value="15px"/>
+				<style name="margin-top" value="0px"/>
+			</sub>
+		</set>
+		<set name="contenttext">
+			<sub element="head" selector="h1">
+				<style name="color" value="#000"/>
+				<style name="margin-top" value="5px"/>
+				<style name="margin-bottom" value="5px"/>
+			</sub>
+			<sub element="subhead" selector="h2">
+				<style name="color" value="#000"/>
+				<style name="margin-top" value="5px"/>
+				<style name="margin-bottom" value="5px"/>
+			</sub>
+			<sub element="author" selector="pre">
+				<style name="color" value="#ccc"/>
+				<style name="margin-top" value="5px"/>
+				<style name="margin-bottom" value="5px"/>
+			</sub>
+			<sub element="ingress" selector="b">
+				<style name="color" value="#000"/>
+				<style name="font-weight" value="800"/>
+			</sub>
+			<sub element="body" selector="p">
+				<style name="color" value="#000"/>
+			</sub>
+			<sub element="image" selector="img">
+				<style name="width" value="100%"/>
+			</sub>
+		</set>
+	</styles>
+</root>

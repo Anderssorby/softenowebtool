@@ -1,0 +1,79 @@
+@CHARSET "ISO-8859-1";
+
+.menu-wrapper {
+	background-image: url("menu_bar.png");
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: transparent;
+	background-origin: padding-box;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	clear: both;
+	height: 90px;
+	text-align: center;
+}
+
+.Menu {
+	margin: auto;
+	position: relative;
+	display: inline-block;
+	margin-top: 1px;
+	padding: 0;
+	z-index: 30;
+}
+
+.Menu li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	z-index: 30;
+}
+
+.Menu a {
+	display: block;
+	margin: 0px;
+	padding: 7px 5px;
+	max-width: 150px;
+	background: transparent;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 200;
+	text-align: center;
+	text-decoration: none;
+	height: 18px;
+}
+
+.Menu li a:hover {
+	background-size: cover;
+	background-image: url("menu_active.jpg");
+}
+
+.Menu div {
+	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+	border: 0;
+	float: none;
+}
+
+.Menu div div {
+	position: absolute;
+	left: auto;
+}
+
+.Menu div a {
+	background: #eeeeee;
+	border: solid 1px #dedede;
+}
+
+.Menu ul li {
+	position: relative;
+	display: block;
+	margin: 0px;
+	width: inherit;
+	float: none;
+}
